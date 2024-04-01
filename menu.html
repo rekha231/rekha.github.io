@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Menu</title>
     <link rel="stylesheet" href="style.css" /> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 nav ul li:nth-child(3) a {
   color: red;
@@ -29,6 +30,23 @@ nav ul li:nth-child(3) a {
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
+
+      <!-- Top Navigation Menu -->
+<div class="topnav">
+  
+  <div id="myLinks">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="menu.html">Menu</a>
+    <a href="Subscription Plans.html">Subscription Plans</a> 
+    <a href="How it Works.html">How it Works</a>
+    <a href="Testimonials.html">Testimonials</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
     </header>
 
 <!-- header end-->
@@ -243,5 +261,15 @@ nav ul li:nth-child(3) a {
     <footer>
       <small><i>Copyright &copy; 2024 Rekha Rani</i></small>
     </footer>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+      </script>
   </body>
 </html>
